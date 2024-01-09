@@ -28,6 +28,8 @@
 		8D58E2582B4835A000A4A460 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58E2572B4835A000A4A460 /* TitleViewModel.swift */; };
 		8D58E25A2B496A7100A4A460 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58E2592B496A7100A4A460 /* SearchResultsViewController.swift */; };
 		8D7A7F782B4C43640042A815 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7A7F772B4C43640042A815 /* YoutubeSearchResponse.swift */; };
+		8DD7B7D42B4D5DA700BCF63D /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7B7D32B4D5DA700BCF63D /* TitlePreviewViewController.swift */; };
+		8DD7B7D62B4D71EF00BCF63D /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7B7D52B4D71EF00BCF63D /* TitlePreviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		8D58E2572B4835A000A4A460 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		8D58E2592B496A7100A4A460 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		8D7A7F772B4C43640042A815 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		8DD7B7D32B4D5DA700BCF63D /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		8DD7B7D52B4D71EF00BCF63D /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				8D58E2572B4835A000A4A460 /* TitleViewModel.swift */,
+				8DD7B7D52B4D71EF00BCF63D /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				8D58E2592B496A7100A4A460 /* SearchResultsViewController.swift */,
+				8DD7B7D32B4D5DA700BCF63D /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 				8D58E24B2B46D00700A4A460 /* Extensions.swift in Sources */,
 				8D7A7F782B4C43640042A815 /* YoutubeSearchResponse.swift in Sources */,
 				8D58E2232B45A2C700A4A460 /* SceneDelegate.swift in Sources */,
+				8DD7B7D62B4D71EF00BCF63D /* TitlePreviewViewModel.swift in Sources */,
 				8D58E2382B45A58000A4A460 /* UpcomingViewController.swift in Sources */,
+				8DD7B7D42B4D5DA700BCF63D /* TitlePreviewViewController.swift in Sources */,
 				8D58E2492B46CC1F00A4A460 /* Title.swift in Sources */,
 				8D58E2362B45A53100A4A460 /* HomeViewController.swift in Sources */,
 				8D58E2582B4835A000A4A460 /* TitleViewModel.swift in Sources */,
