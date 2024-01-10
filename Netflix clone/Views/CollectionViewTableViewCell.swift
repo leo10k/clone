@@ -56,7 +56,16 @@ class CollectionViewTableViewCell: UITableViewCell {
     }
     
     private func downloadTitleAt(indexPath: IndexPath) {
-        print("Downloading \(titles[indexPath.row].original_title ?? "")")
+        
+        DataPersistenceManager.shered.downloadTitleWith(model: titles[indexPath.row]) { result in
+            switch result {
+            case .success():
+                print("Downloaded to Database")
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
     }
 }
 
@@ -107,7 +116,7 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemsAt indexPaths: [IndexPath], point: CGPoint) -> UIContextMenuConfiguration? {
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
         let config = UIContextMenuConfiguration(
             identifier: nil,
             previewProvider: nil) {[weak self] _ in
@@ -119,5 +128,7 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         }
         return config
     }
+    
+    
     
 }
